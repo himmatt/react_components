@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+    --primary: #309898;
+    --success: #147350;
+    --warning: #ff7f3e;
+    --info: #1c42a8;
+    --error: #dc2626;
+    --muted: #e5e7eb;
+    --default: #171717;
+}
+
+@theme {
+    --color-primary: var(--primary);
+    --color-success: var(--success);
+    --color-warning: var(--warning);
+    --color-info: var(--info);
+    --color-error: var(--error);
+    --color-muted: var(--muted);
+    --color-default: var(--default);
+}
+
+body {
+    scroll-behavior: initial;
+    @apply text-xs 2xl:text-base text-default;
+}
+
+h1 {
+    @apply text-2xl 2xl:text-4xl font-bold;
+}
+
+h2 {
+    @apply text-xl 2xl:text-3xl font-semibold;
+}
+
+h3 {
+    @apply text-base 2xl:text-xl font-semibold;
+}
+
+h4 {
+    @apply text-xs 2xl:text-base font-semibold;
+}
+
+h5 {
+    @apply text-[10px] leading-[12px] 2xl:text-sm font-semibold;
+}
+
+h6 {
+    @apply text-[8px] leading-[10px] 2xl:text-xs font-semibold;
+}
+
+.btn {
+    @apply px-1.5 2xl:px-2 h-[36px] 2xl:h-[48px] md:min-w-24 2xl:min-w-32 rounded-[8px] shadow transition-all flex items-center justify-center gap-1 2xl:gap-2 font-semibold disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer text-[10px] leading-[12px] 2xl:text-sm;
+}
+
+.customized-input {
+    @apply py-1.5 2xl:py-2 px-3 2xl:px-4 h-[36px] 2xl:h-[48px] w-full rounded-[8px] border border-muted outline-none focus:border-primary focus:border-2 bg-white disabled:cursor-not-allowed disabled:text-gray-400;
+}
+
+.customized-rounded {
+    @apply rounded-[16px];
+}
+
+.text-content {
+    @apply text-xs 2xl:text-base;
+}
+
+.text-subContent {
+    @apply text-[10px] leading-[12px] 2xl:text-sm;
+}
+
+.text-smallContent {
+    @apply text-[8px] leading-[10px] 2xl:text-xs;
+}
